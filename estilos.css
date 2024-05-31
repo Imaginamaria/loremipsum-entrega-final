@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before{
+    display: block;
+    content: '';
+    height: 200px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: $primary;
+    font-weight: 600;
+}
+
+
+.nav-link{
+    line-height: 39px;
+    background: rgba(0,0,0,0.1);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0px 1.8em;
+    margin-left: 2em;
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+}
+
+.logo{
+    width: 180px;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    transition: all .4s ease-out;
+}
+.logo:hover{
+    filter: brightness(2);
+    width: 400px;
+    padding: 5px 230px 5px 10px;
+    background-color: transparent;
+}
+.logo, header div, .nav-link{
+    display: inline-block;
+}
+
+/* pattern */
+
+.header-pattern {
+    background-image: url('img/background-header-color.png');
+    background-repeat: repeat;
+    background-size: 100px; /* Ajusta el tamaño del patrón */
+  background-position: center; /* Ajusta la posición del patrón */
+  }
+
+  header h1{
+    font-size: 3em;
+    font-weight: 300;
+    padding: .35em 0 .4em 0;
+}
+header h1, header h2{
+    color: white;
+}
+
+/* Seccion de "News" */
+#news{
+    padding: 4em 0;
+}
+
+.b-bottom{
+    border-bottom: 1px solid #666666;
+}
+.primary-article{
+    margin-bottom: 4.6em;
+    position: relative;
+    height: 498px;
+}
+
+#news :nth-child(2)>img{
+    position: absolute;
+    right: 0;
+}
+#news :nth-child(2)>div{
+    position: absolute;
+    left: 0;
+}
+#news :nth-child(3){
+    margin-bottom: 0;
+}
+
+.primary-article-img, .primary-article-text{
+    width: 649px;
+}
+
+.primary-article-text{
+    padding: 2.4em;
+    background: white;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.primary-article-text h1{
+    font-size: 1.5em;
+    padding-bottom: .8em;
+}
+
+.primary-article-text p{
+    font-size: 1.2em;
+}
