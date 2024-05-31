@@ -147,3 +147,8 @@ header h1, header h2{
 .blog-article p{
     padding-bottom: 1em;
 }
+
+.card{
+    border:none;
+    padding: 2rem;
+}
