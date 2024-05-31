@@ -152,3 +152,43 @@ header h1, header h2{
     border:none;
     padding: 2rem;
 }
+
+/* Seccion de "Team" */
+#team{
+    padding: 3.4em 0 2.1em;
+}
+.card-team{
+    display: flex;
+    height: 165px;
+    width: 368px;
+    background: url(img/placeholder.svg) top left / 111px repeat-y white;
+    margin-bottom: 2.4em;
+    filter: saturate(0);
+    opacity: .8;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.11);
+    transition: all 0.3s ease-in-out;
+}
+.card-team-img{
+    width: 111px;
+    height: 100%; /* Ensure the image covers the full height of the card */
+    object-fit: cover;
+}
+.card-team-text{
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+}
+.card-team-text h4{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding-bottom: 0.8em;
+}
+.card-team:hover{
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    opacity: 1;
+    filter: saturate(1);
+}
+.no-img{
+    margin-left: 111px;
+}
