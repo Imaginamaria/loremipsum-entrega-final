@@ -8,7 +8,7 @@
 body::before{
     display: block;
     content: '';
-    height: 200px;
+    height: 350px;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
@@ -114,4 +114,36 @@ header h1, header h2{
 
 .primary-article-text p{
     font-size: 1.2em;
+}
+
+/* Seccion de "Blog" */
+#blog{
+    padding: 3.4em 0 1.5em;
+}
+#blog h3, #team h3{
+    font-size: 2.1em;
+    padding-bottom: 1.6em;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-article{
+    width: 368px;
+    text-decoration: none;
+    color: #666666;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 2.4em;
+}
+.blog-article h1{
+    font-size: 1.4em;
+    padding: .5em 0 .9em;
+}
+
+.blog-article:hover h1{
+    color: #006d68;
+}
+.blog-article p{
+    padding-bottom: 1em;
 }
